@@ -44,23 +44,23 @@ $ sudo ./jenkins-init.sh
 
 ### 4. Jenkins 백업
 
-실행중인 Jenkins Contaier를 .tar 파일로 백업합니다.
+실행중인 Jenkins의 /var/jenkins_home에 바인딩된 ~/jenkins 디렉터리를 tar.gz 파일로 백업합니다.
 
 ```
-$ sudo ./jenkins-export.sh
+$ sudo ./jenkins-backup.sh
 ```
 
-### 5. Jenkins 백업파일 가져오기
+### 5. Jenkins 초기화
 
-.tar 파일로 백업받은 Jenkins Container를 이용해 새 컨테이너 실행합니다.
+실행중인 Jenkins의 /var/jenkins_home에 바인딩된 ~/jenkins 디렉터리를 제거합니다.
 
 ```
-$ sudo ./jenkins-import.sh
+$ sudo ./jenkins-clear.sh
 ```
 
 ### 6. Jenkins Container 제거
 
-실행중인 Jenkins Contianer를 종료 및 제거 합니다. 완전히 Container를 제거하기 때문에 Container를 백업 하지 않은 상태에서 절대 실행시키지 마세요.
+실행중인 Jenkins Contianer를 종료 및 제거 합니다.
 
 ```
 $ sudo ./jenkins-rm.sh
