@@ -11,7 +11,8 @@ Jenkins를 통해 Docker Container 배포자동화를 구축할 수 있습니다
 
 ```
 $ git clone https://github.com/skymins04/docker-jenkins-sh.git
-$ sudo chmod +x ./docker-jenkins-sh/*.sh
+$ cd docker-jenkins-sh
+$ sudo chmod +x ./*.sh
 ```
 
 ### 1. 초기 설치
