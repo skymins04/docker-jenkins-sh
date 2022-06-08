@@ -17,11 +17,13 @@ $ sudo chmod +x ./*.sh
 
 ### 1. 초기 설치
 
-Docker를 설치하고 Jenkins Container Image를 Pull 받습니다.  
-Docker 설치가 포함된 스크립트이기 때문에 **이미 Docker가 설치되어있는 경우엔 실행하지 마세요.**
+Docker를 설치하는 스크립트입니다.  
+Docker 설치가 포함된 스크립트이기 때문에 **이미 Docker가 설치되어있는 경우엔 실행하지 마세요.**  
+사용중인 배포판에 맞춰 실행해주세요.
+(현재 우분투만 제공하고있습니다. 다른 배포판은 직접 설치를 진행해주세요.)
 
 ```
-$ sudo ./jenkins-install.sh
+$ sudo ./docker-install-ubuntu.sh
 ```
 
 ### 2. Jenkins 컨테이너 실행
