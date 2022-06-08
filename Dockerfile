@@ -14,4 +14,5 @@ RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/doc
 RUN apt-get -y update
 RUN apt-get install docker-ce docker-ce-cli containerd.io docker-compose docker-compose-plugin -y
 RUN if [ -e /var/run/docker.sock ]; then chown jenkins:jenkins /var/run/docker.sock; fi
+RUN usermod -aG docker jenkins
 USER jenkins
